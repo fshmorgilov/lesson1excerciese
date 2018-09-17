@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lesson1excercise</string>
+    <string name="some_number_here">Some number here</string>
+    <string name="previewBtnText">Preview</string>
+    <string name="activity_second_text_view_default">You entered: %s</string>
+    <string name="send_email_btn_lbl">Send Email</string>
+</resources>
