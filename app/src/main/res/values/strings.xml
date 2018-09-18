@@ -4,4 +4,5 @@
     <string name="previewBtnText">Preview</string>
     <string name="activity_second_text_view_default">You entered: %s</string>
     <string name="send_email_btn_lbl">Send Email</string>
+    <string name="play_game_btn_text">EasterEgg</string>
 </resources>

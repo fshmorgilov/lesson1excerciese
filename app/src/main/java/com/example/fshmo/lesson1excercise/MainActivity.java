@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import static android.content.res.Configuration.ORIENTATION_LANDSCAPE;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String LTAG = MainActivity.class.getName();
@@ -39,6 +41,19 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+        Button playBtn = findViewById(R.id.play_game_btn);
+        if (this.getResources().getConfiguration().orientation == ORIENTATION_LANDSCAPE) {
+            playBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.i(LTAG, "PlayBtn pressed");
+                    ExpActivity.start(currentActivity);
+                }
+            });
+        } else {
+            Log.i(LTAG, "Play button invisible");
+            playBtn.setVisibility(View.INVISIBLE);
+        }
     }
 
     @Override

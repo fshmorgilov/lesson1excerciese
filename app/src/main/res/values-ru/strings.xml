@@ -5,4 +5,5 @@
     <string name="previewBtnText">Предпросмотр</string>
     <string name="activity_second_text_view_default">Вы ввели: %s</string>
     <string name="send_email_btn_lbl">Отправить EMail</string>
+    <string name="play_game_btn_text">Пасхалочка</string>
 </resources>

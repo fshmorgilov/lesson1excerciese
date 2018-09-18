@@ -25,7 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/common_btn_height"
             android:text="@string/previewBtnText"/>
-
+        <Button
+            android:id="@+id/play_game_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_btn_height"
+            android:text="@string/play_game_btn_text"/>
     </LinearLayout>
 
 
