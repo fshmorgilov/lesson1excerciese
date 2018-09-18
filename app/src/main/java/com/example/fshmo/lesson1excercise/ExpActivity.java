@@ -17,6 +17,11 @@ public class ExpActivity extends AppCompatActivity {
     private List<Button> buttons = new ArrayList<>();
     private static final String LTAG = ExpActivity.class.getName();
 
+    public static void start(Activity activity) {
+        Intent intent = new Intent(activity, ExpActivity.class);
+        activity.startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +53,4 @@ public class ExpActivity extends AppCompatActivity {
     }
 
 
-    public static void start(Activity activity) {
-        Intent intent = new Intent(activity, ExpActivity.class);
-        activity.startActivity(intent);
-    }
 }

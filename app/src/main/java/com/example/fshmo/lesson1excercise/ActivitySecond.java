@@ -21,6 +21,13 @@ public class ActivitySecond extends AppCompatActivity {
     private Activity activity = this;
     private Button sendEmailBtn;
 
+    public static void start(Activity activity, String text) {
+        Intent intent = new Intent(activity, ActivitySecond.class);
+        intent.putExtra(KEY_TEXT, text);
+        activity.startActivity(intent);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +47,6 @@ public class ActivitySecond extends AppCompatActivity {
 
     }
 
-    public static void start(Activity activity, String text) {
-        Intent intent = new Intent(activity, ActivitySecond.class);
-        intent.putExtra(KEY_TEXT, text);
-        activity.startActivity(intent);
-    }
 
     private void composeEmail(String[] addresses, String subject, String body) {
         Intent intent = new Intent(Intent.ACTION_SEND);
