@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                     Log.i(LTAG, "BTN PRESSED");
                     String entered = editText.getText().toString();
                     Log.i(LTAG, entered);
-                    System.out.println(entered);
                     Toast.makeText(currentActivity, "Showing your text", Toast.LENGTH_LONG).show();
                     ActivitySecond.start(currentActivity, entered);
 

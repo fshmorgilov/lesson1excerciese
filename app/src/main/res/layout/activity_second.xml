@@ -12,15 +12,14 @@
         <TextView
             android:id="@+id/text_view"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text="@string/activity_second_text_view_default"
+            android:layout_height="@dimen/common_text_view_height"
             android:gravity="top"
             android:textAlignment="center"
             />
         <Button
             android:id="@+id/sendEmailBtn"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/common_btn_height"
             android:text="@string/send_email_btn_lbl"
             android:gravity="bottom"/>
 

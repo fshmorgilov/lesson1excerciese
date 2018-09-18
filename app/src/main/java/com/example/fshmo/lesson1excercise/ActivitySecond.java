@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Arrays;
 
@@ -36,7 +37,7 @@ public class ActivitySecond extends AppCompatActivity {
 
     }
 
-    public static void start(Activity activity, String text){
+    public static void start(Activity activity, String text) {
         Intent intent = new Intent(activity, ActivitySecond.class);
         intent.putExtra(KEY_TEXT, text);
         activity.startActivity(intent);
@@ -50,6 +51,8 @@ public class ActivitySecond extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, body);
         if (intent.resolveActivity(getPackageManager()) != null)
             startActivity(intent);
+        else
+            Toast.makeText(activity, "No Email App found", Toast.LENGTH_LONG).show();
     }
 }
 
